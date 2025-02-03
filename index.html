@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoList </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ToDo List</h1>
+
+    <!-- Task Form -->
+    <form id="todo-form">
+      <input type="text" id="task-title" placeholder="Task title" required>
+      <input type="date" id="task-deadline" required>
+      <select id="task-priority" required>
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+      <input type="text" id="task-comment" placeholder="Comment (optional)">
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Task List -->
+    <h2>Task List</h2>
+    <ul id="todo-list"></ul>
+    <div id="calendar"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
